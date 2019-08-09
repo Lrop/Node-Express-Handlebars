@@ -1,9 +1,20 @@
-#container{
+#h1{
     text-align: center;
     font-size: 45px;
     text-decoration: underline black;
     font-family: 'Alfa Slab One', cursive;
     color: yellow;
-    text-shadow: -1px 0 black, 0 4px black, 4px 0 black, 0 -1px black;
-
+    text-shadow: -1px 0 palevioletred, 0 4px violet, 4px 0 palevioletred, 0 -1px palevioletred;
+    background-color: black;
+    height: 500px;
+    padding-top: 20px;
+    margin-top: 0px;
+}
+#h4 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Alfa Slab One', cursive;
+    color: yellow;
+    text-shadow: -1px 0 palevioletred, 0 4px violet, 4px 0 palevioletred, 0 -1px palevioletred;
+    background-color: black;
 }
