@@ -4,7 +4,7 @@
     text-decoration: underline black;
     font-family: 'Alfa Slab One', cursive;
     color: yellow;
-    text-shadow: -1px 0 palevioletred, 0 4px violet, 4px 0 palevioletred, 0 -1px palevioletred;
+    text-shadow: -1px 0 violet, 0 4px violet, 4px 0 violet, 0 -1px violet;    
     background-color: black;
     height: 500px;
     padding-top: 20px;
@@ -16,6 +16,6 @@
     font-size: 25px;
     font-family: 'Alfa Slab One', cursive;
     color: yellow;
-    text-shadow: -1px 0 palevioletred, 0 4px violet, 4px 0 palevioletred, 0 -1px palevioletred;
+    text-shadow: -1px 0 violet, 0 4px violet, 4px 0 violet, 0 -1px violet;
     background-color: black;
 }
