@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
   database: "burgers_db"
 });
 
-
+// Check if connection is working 
 connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);
@@ -17,5 +17,5 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 });
 
-
+// Export the Module
 module.exports = connection;
