@@ -4,7 +4,7 @@ body {
     line-height: 1.42857143;
     color: #333;
     /* background-color: cornflowerblue; */
-    background-image: radial-gradient(red, green, blue);
+    background-image: radial-gradient(black, white, black);
 }
 #container{
     text-align: center;

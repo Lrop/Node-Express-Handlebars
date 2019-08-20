@@ -47,7 +47,7 @@ $(function() {
   
    
     $(".trashburger").on("click", function(event) {
-      event.preventDefault();
+      // event.preventDefault();
       var id = $(this).data("id");
   
       // Send the DELETE request.
