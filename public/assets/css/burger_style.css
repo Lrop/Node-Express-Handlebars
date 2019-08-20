@@ -4,7 +4,8 @@ body {
     line-height: 1.42857143;
     color: #333;
     /* background-color: cornflowerblue; */
-    background-image: radial-gradient(black, white, black);
+    background-image: radial-gradient(#40e0d0, #ff8c00, #ff0080);
+    /* background-image: radial-gradient(#0cebeb, #20e3b2, #29ffc6); */
 }
 #container{
     text-align: center;
@@ -36,7 +37,7 @@ body {
     background-color: black;
 }
 .jumbotron {
-    background-color: turquoise;
+    background-color: black;
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
     color: yellow;
@@ -45,15 +46,23 @@ body {
     box-shadow: 0px 0px 8px 8px black;
     margin-top: 20px;
 }
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+    color: red;
+}
 
 .panel-default>.panel-heading {
-    color: black;
-    background-color: turquoise;
+    color: white;
+    background-color: black;
     /* border-color: yellow; */
     /* border-style: dashed; */
     font-family: 'Anton', sans-serif;
     text-align: center;
     box-shadow: 0px 0px 2px 2px black;
+    border-color: black;
+    padding-bottom: 0px;
 }
 label {
     color: black;
@@ -79,17 +88,16 @@ button, input, select, textarea {
 }
 .fa-thumbs-up:before {
     content: "\f164";
-    color: yellow;
+    color: white;
 }
 .jumbotron p {
-    
     margin-bottom: 15px;
-    font-size: 21px;
+    font-size: 35px;
     font-weight: 200;
 }
 .h2, h2 {
     font-size: 30px;
-    
+    color: green;
 }
 #money {
     background-color: black;
@@ -119,7 +127,7 @@ button, input, select, textarea {
 b, strong {
     font-weight: 700;
     font-size: 25px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 label {
     color: black;
@@ -141,3 +149,24 @@ label {
     background-color: black;
     border-color: black;
 }
+#trashbutton {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+#eatbutton {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+p {
+    margin: 0 0 10px;
+    padding-top: 13px;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: black;
+    cursor: pointer;
+} 
