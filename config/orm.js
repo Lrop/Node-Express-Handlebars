@@ -29,7 +29,7 @@ function objToSql(ob) {
 
 // Creating variable ORM
   var orm = {
-    all: function(table, cb) {
+    selectAll: function(table, cb) {
       var queryString = "SELECT * FROM burgers";
       connection.query(queryString, function(err, result) {
         if (err) {
@@ -40,7 +40,7 @@ function objToSql(ob) {
     },
 
     //Creating the create function to insert values into the table  
-    createOne: function(table, cols, vals, cb) {
+    insertOne: function(table, cols, vals, cb) {
       var queryString = "INSERT INTO " + table;
   
       queryString += " (";

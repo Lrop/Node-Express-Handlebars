@@ -3,7 +3,8 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
+    background-image: radial-gradient(red, green, blue);
 }
 #container{
     text-align: center;
@@ -41,6 +42,8 @@ body {
     color: yellow;
     text-shadow: -1px 0 black, 0 4px black, 4px 0 black, 0 -1px black;
     border-style: dashed;
+    box-shadow: 0px 0px 8px 8px black;
+    margin-top: 20px;
 }
 
 .panel-default>.panel-heading {
@@ -49,6 +52,8 @@ body {
     /* border-color: yellow; */
     /* border-style: dashed; */
     font-family: 'Anton', sans-serif;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px black;
 }
 label {
     color: black;
@@ -58,6 +63,7 @@ label {
     font-weight: 700;
     text-shadow: none;
     font-family: fantasy;
+    font-size: 20px;
 }
 button, input, select, textarea {
     font-family: inherit;
@@ -106,6 +112,9 @@ button, input, select, textarea {
     /* border-style: dashed; */
     /* border-color: yellow; */
     font-family: 'Anton', sans-serif;
+    /* box-shadow: 4px 4px 8px 8px black; */
+    box-shadow: 0px 0px 2px 2px black;
+    border-radius: 2px;
 }
 b, strong {
     font-weight: 700;
@@ -121,4 +130,14 @@ label {
     text-shadow: none;
     font-family: fantasy;
     display: block;
+}
+.btn-danger {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black;
 }
