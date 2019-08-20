@@ -1,33 +1,33 @@
-// Require Dependencies First 
+// Declaring the Dependencies
 var express = require("express");
-var exphbs = require("express-handlebars");
-var mysql = require("mysql");
 var bodyParser = require("body-parser");
+var exphbs = require("express-handlebars");
 
-
-// Setting up our Port 
+// Use the app varaible to run express
 var app = express();
-var PORT = process.env.PORT || 3606;
 
-// Adding Static files 
-app.use(express.static("public"));
+// Setting up port for Heroku
+var PORT = process.env.PORT || 3000;
 
-// Connecting our body parsing elements 
+// Adding the static route 
+app.use(express.static("./public"));
+
+// Connection our body parser elements 
+// First is the url body parser
+// Second is the json body parser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Setting up handlebars 
-app.engine("handlebars", exphbs({defaultLayout: "main"}));
+// Setting up handlenabars and our template engine 
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-
-// Setting up routes for future use 
+// Routes for application 
+// Second is using the routes 
 var routes = require("./controllers/burgers_controller.js");
 app.use(routes);
 
-
-// Setting up our port to listen 
+// Having the port listen 
 app.listen(PORT, function() {
-
-    console.log("Server listening on: http://localhost:" + PORT);
-  });
+  console.log("Server listening on: http://localhost:" + PORT);
+});

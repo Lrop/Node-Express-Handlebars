@@ -1,0 +1,124 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: cornflowerblue;
+}
+#container{
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline black;
+    font-family: 'Alfa Slab One', cursive;
+    color: yellow;
+    /* text-shadow: -1px 0 violet, 0 4px violet, 4px 0 violet, 0 -1px violet;     */
+    background-color: black;
+    height: 500px;
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+#h4 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Alfa Slab One', cursive;
+    color: yellow;
+    /* text-shadow: -1px 0 violet, 0 4px violet, 4px 0 violet, 0 -1px violet; */
+    background-color: black;
+}
+#h4 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Alfa Slab One', cursive;
+    color: yellow;
+    /* text-shadow: -1px 0 violet, 0 4px violet, 4px 0 violet, 0 -1px violet; */
+    background-color: black;
+}
+.jumbotron {
+    background-color: turquoise;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: yellow;
+    text-shadow: -1px 0 black, 0 4px black, 4px 0 black, 0 -1px black;
+    border-style: dashed;
+}
+
+.panel-default>.panel-heading {
+    color: black;
+    background-color: turquoise;
+    /* border-color: yellow; */
+    /* border-style: dashed; */
+    font-family: 'Anton', sans-serif;
+}
+label {
+    color: black;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-shadow: none;
+    font-family: fantasy;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: black;
+}
+
+#addburger {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+.fa-thumbs-up:before {
+    content: "\f164";
+    color: yellow;
+}
+.jumbotron p {
+    
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+.h2, h2 {
+    font-size: 30px;
+    
+}
+#money {
+    background-color: black;
+    color: white;
+}
+.btn-warning {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+.btn-warning:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+.panel-body {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    /* border-style: dashed; */
+    /* border-color: yellow; */
+    font-family: 'Anton', sans-serif;
+}
+b, strong {
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: underline;
+}
+label {
+    color: black;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-shadow: none;
+    font-family: fantasy;
+    display: block;
+}

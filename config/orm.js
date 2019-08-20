@@ -1,6 +1,33 @@
+// Selecting the Dependencies  
 var connection = require("../config/connection.js");
 
+// Helper functions 
+// Create question mark function 
+function printQuestionMarks(num) {
+  var arr = [];
+  for (var i = 0; i < num; i++) {
+    arr.push("?");
+  }
+  return arr.toString();
+}
 
+// Creating the translate to SQL function 
+function objToSql(ob) {
+  var arr = [];
+  for (var key in ob) {
+    var value = ob[key];
+    if (Object.hasOwnProperty.call(ob, key)) {
+      if (typeof value === "string" && value.indexOf(" ") >= 0) {
+        value = "'" + value + "'";
+      }
+      arr.push(key + "=" + value);
+    }
+  }
+  return arr.toString();
+}
+
+
+// Creating variable ORM
   var orm = {
     all: function(table, cb) {
       var queryString = "SELECT * FROM burgers";
@@ -11,7 +38,9 @@ var connection = require("../config/connection.js");
         cb(result);
       });
     },
-    create: function(table, cols, vals, cb) {
+
+    //Creating the create function to insert values into the table  
+    createOne: function(table, cols, vals, cb) {
       var queryString = "INSERT INTO " + table;
   
       queryString += " (";
@@ -31,8 +60,9 @@ var connection = require("../config/connection.js");
         cb(result);
       });
     },
-    // An example of objColVals would be {name: panther, sleepy: true}
-    update: function(table, objColVals, condition, cb) {
+    
+    // Creating the update function to update values in the table 
+    updateOne: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
   
       queryString += " SET ";
@@ -49,7 +79,9 @@ var connection = require("../config/connection.js");
         cb(result);
       });
     },
-    delete: function(table, condition, cb) {
+
+    // Creating the delete function for the values in the table 
+    deleteOne: function(table, condition, cb) {
       var queryString = "DELETE FROM " + table;
       queryString += " WHERE ";
       queryString += condition;
@@ -64,6 +96,6 @@ var connection = require("../config/connection.js");
     }
   };
   
-  // Export the orm object for the model (cat.js).
+  // Exporting the orm module
   module.exports = orm;
   

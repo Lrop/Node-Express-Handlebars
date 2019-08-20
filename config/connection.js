@@ -1,21 +1,26 @@
-var mysql = require("mysql");
+// Starting with declaring the dependencies
+const mysql = require("mysql");
 
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3606,
-  user: "root",
-  password: "password",
-  database: "burgers_db"
-});
 
-// Check if connection is working 
-connection.connect(function(err) {
-  if (err) {
-    console.error("error connecting: " + err.stack);
-    return;
-  }
-  console.log("connected as id " + connection.threadId);
-});
+// Creating Connection To Mysql
+  var connection = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "password",
+    database: "burgers_db"
+  });
 
-// Export the Module
+// Console logging the status of the connection 
+  connection.connect(function(err){
+    if (err) {
+      console.error("error connection: " + error.stack);
+      return;
+    }
+    console.log("connected as id: " + connection.threadId);
+  })
+
+// Calling the connection  
+// connection.connect();
+
+// Exporting the Connection
 module.exports = connection;

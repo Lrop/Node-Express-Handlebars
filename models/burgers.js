@@ -1,30 +1,32 @@
+// Require the ORM 
 var orm = require("../config/orm");
 
-
+// Creating variable named burger 
+// Call back all of the ORMS 
 var burger = {
-    all: function(cb) {
+    selectAll: function(cb) {
       orm.all("burgers", function(res) {
         cb(res);
       });
     },
     
-    create: function(cols, vals, cb) {
+    insertOne: function(cols, vals, cb) {
       orm.create("burgers", cols, vals, function(res) {
         cb(res);
       });
     },
-    update: function(objColVals, condition, cb) {
+    updateOne: function(objColVals, condition, cb) {
       orm.update("burgers", objColVals, condition, function(res) {
         cb(res);
       });
     },
-    delete: function(condition, cb) {
+    deleteOne: function(condition, cb) {
       orm.delete("burgers", condition, function(res) {
         cb(res);
       });
     }
   };
   
-  // Export the database functions for the controller (catsController.js).
+  // Export the database functions for the controller 
   module.exports = burger;
   
