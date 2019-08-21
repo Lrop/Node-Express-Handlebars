@@ -13,7 +13,7 @@ const mysql = require("mysql");
 // Console logging the status of the connection 
   connection.connect(function(err){
     if (err) {
-      console.error("error connection: " + error.stack);
+      console.error("error connection: " + err.stack);
       return;
     }
     console.log("connected as id: " + connection.threadId);
